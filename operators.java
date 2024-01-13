@@ -1,5 +1,7 @@
-public class Main {
+public class Operators  {
     public static void main(String[] args){
-        System.out.println("Hello lpu");
+        int a = 3;
+        int b = 4;
+        System.out.println(a+b);
     }
 }
