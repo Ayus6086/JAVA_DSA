@@ -1,12 +1,15 @@
+import java.util.Scanner;
 public class Conditionalstatment {
     public static void main(String[] args) {
-        int a = 5;
-        int b = 10;
-        if(a>b) {
-            System.out.println("a is greater than b");
-    }
-    else{
-        System.out.println("b is greater than a");
+        try (Scanner in = new Scanner(System.in)) {
+            System.out.println("Enter your age : ");
+            int age = in.nextInt();
+            if (age>=18){
+                System.out.println("You are eligible to vote");
+            }
+            else{
+                System.out.println("You are not eligible to vote");
+            }
         }
     }
 }
