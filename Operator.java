@@ -8,6 +8,5 @@ public class Operator {
         int c = 5;
         int d = 6;
         System.out.println(c*d);
-
     }
 }
