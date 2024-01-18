@@ -1,3 +1,4 @@
+//operators are use to perform operations on the variables and values
 public class Operator {
     public static void main(String[] args){
         int a = 3;
