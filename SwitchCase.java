@@ -28,32 +28,26 @@ public class SwitchCase {
         //         System.out.println("Invalid day");
         // }
 
-        String days = "Friday";
-        switch(days){
-            case "Monday":
-                System.out.println("NO class");
-                break;
-            case "Tuesday":
-                System.out.println("NO class");
-                break;
-            case "Wednesday":
-                System.out.println("Class - 8pm - 9pm");
-                break;
-            case "Thursday":
-                System.out.println("Class - 7pm - 9pm");
-                break;
-            case "Friday":
-                System.out.println("Class - 7pm - 9pm");
-                break;
-            case "Saturday":
-                System.out.println("Holiday");
-                break;
-            case "Sunday":
-                System.out.println("Holiday");
-                break;
-            default:
-                System.out.println("Wrong input");
-        }
+            //Instead of break you can use  ' -> '
 
+        // String days = "Fridy";
+        // switch(days){
+        //     case "Monday", "Tuesday", "Friday", "Saturday", "Sunday" -> System.out.println("NO class");
+        //     case "Wednesday" -> System.out.println("Class - 8pm - 9pm");
+        //     case "Thursday" -> System.out.println("Class - 7pm - 9pm");
+        //     default -> System.out.println("Wrong input");
+        // }
+
+        //Instead of break you can use '-> '
+            String days = "Sunday";
+            String output = switch(days) {
+            case "Monday", "Tuesday", "Saturday", "Sunday" : yield("No class");
+            case "Wednesday" : yield("Class - 8pm - 9pm");
+            case "Thursday", "Friday" : yield("Class - 7pm - 9pm");
+            default : yield("Invalid output ");
+        };
+        System.out.println(output);
     }
+
+    //----These are the 3 ways to write the break method-----
 }
