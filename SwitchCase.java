@@ -49,5 +49,5 @@ public class SwitchCase {
         System.out.println(output);
     }
 
-    //----These are the 3 ways to write the break method-----
+    //------These are the 3 ways to write the break method-----
 }
