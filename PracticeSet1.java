@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class PracticeSet1{
     public static void main(String[] args) {
         //Q1) Write program to sum of the three numbers
-        /*try (Scanner sc = new Scanner(System.in)){
+        try (Scanner sc = new Scanner(System.in)){
             System.out.println("Enter a : ");
             int a = sc.nextInt();
             System.out.println("Enter b : ");
@@ -11,7 +11,7 @@ public class PracticeSet1{
             int c = sc.nextInt();
             int sum = a+b+c;
             System.out.println("Sum is -> " + sum);
-        }*/
+        }
 
         //Q2) Write program to calculate CGPA using marks of three subjects (out of 100)
         /*try (Scanner sc = new Scanner(System.in)){
@@ -43,12 +43,10 @@ public class PracticeSet1{
 
         //Q5) Write a program to detect whether a number is int or not
 
-        try (Scanner sc = new Scanner(System.in)) {
+        /*try (Scanner sc = new Scanner(System.in)) {
             System.out.println("Enter a number : ");
             System.out.println(sc.hasNextInt());
             
-        }
-
-            
+        }*/     
     }
 }
