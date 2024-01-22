@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class Userinput {
     public static void main(String[] args){
         System.out.println("Taking input from user");
-        try (Scanner sc = new Scanner(System.in)) {
+        Scanner sc = new Scanner(System.in);
             System.out.println("Enter a : ");
             int a = sc.nextInt();
             System.out.println("Enter b : ");
@@ -21,9 +21,4 @@ public class Userinput {
             String Q = sc.nextLine();
             System.out.println(Q);
         }
-
-
-
-
     }
-}
