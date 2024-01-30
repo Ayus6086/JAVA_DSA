@@ -11,8 +11,7 @@ public class RockPaperScissorsGame{
     System.out.println("Enter your preference ");
     int a = sc.nextInt();
     int b = r.nextInt(3);
-    // System.out.println("Computer input "+ b);
-    if (a <3){
+    if (a < 3){
     System.out.println("Computer input "+ b); 
     if (a == 0 && b == 1){
 	System.out.println("Computer wins");	
@@ -34,11 +33,11 @@ public class RockPaperScissorsGame{
 }
    else if (a == b){
 	System.out.println("Game tie");	
-
+    }
     }
 else{
     System.out.println("Invalid input");
 }
-    }
+    
 }
 }
