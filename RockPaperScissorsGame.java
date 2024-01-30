@@ -37,7 +37,6 @@ public class RockPaperScissorsGame{
     }
 else{
     System.out.println("Invalid input");
-}
-    
+}   
 }
 }
