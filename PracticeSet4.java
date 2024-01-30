@@ -45,7 +45,7 @@ public class PracticeSet4{
 */
 
 //------------------------------------------Q3)---------------------------------
-    System.out.println("Enter the day number you want to find ");
+/*    System.out.println("Enter the day number you want to find ");
     int day = in.nextInt();
     switch(day){
         case 1:
@@ -71,7 +71,20 @@ public class PracticeSet4{
             break;
         default:
             System.out.println("Invalid Input");
-    }
+    } */
     
+    //------------------------------------------Q4)---------------------------------
+
+    System.out.println("Enter your website address with url (.com or .org or .in) -> ");
+    String url = in.nextLine();
+    if (url.endsWith(".com")){
+        System.out.println("Your website is commercial website");
+    }
+    else if (url.endsWith(".org")){
+        System.out.println("Your website is organisation website");
+    }
+    else if (url.endsWith(".in")){
+        System.out.println("Your website is indian website");
+    }
     }
 }
