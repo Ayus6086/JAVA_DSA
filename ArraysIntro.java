@@ -16,6 +16,10 @@ public class ArraysIntro{
     age[2] = 40;*/
     //Q3) Declaration and initialization
     int[] age ={20, 30, 40};
-    System.out.println(age[2]);
+    System.out.println("Int type: "+ age[2]);
+    float [] num = {23.5f , 45.6f , 45.7f , 45.8f};
+    System.out.println("Float type:"+ num[2]);
+    String [] name ={"Ayush", "Anand", "ShriRaam"};
+    System.out.println("Strings type: "+ name[0]);
     }
 }
