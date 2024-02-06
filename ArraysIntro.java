@@ -1,6 +1,6 @@
 public class ArraysIntro{
     public static void main(String[] args) {
-    //There are three ways to declare arrays
+    //----There are three ways to declare arrays----
     //Q1) Declaration and memory allocation
     int [] marks = new int[4];
     //intialization
