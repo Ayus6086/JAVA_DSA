@@ -9,7 +9,7 @@ public class ForEachLoop{
             System.out.println("In reverse Order: "+ arr[i]);
         }
         System.out.println("For-Each loop");
-        for(int i: arr){
+        for(int i: arr){//fro-each loop
             System.out.println("In Serial Number: "+ i);
         }
     }
