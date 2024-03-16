@@ -1,6 +1,7 @@
 /* A constructor is a block of code similar to a class
 It is called when an instance of a class is created.
-
+Constructors are almost similar to methods except for two things - 
+its name is the same as the class name and it has no return type.
 */
 class Person{
     public String name;
@@ -8,7 +9,7 @@ class Person{
     public int mob;
     //default constructor
     public Person(){
-        System.out.println("Hello World");
+        System.out.println("Default constructor");
     }
     public Person(String name, int age){
         System.out.println("Para Constructor");
@@ -24,8 +25,8 @@ class Person{
 }
 public class Constructor {
     public static void main(String[] args) {
-        Person p1 = new Person("John",12);
         Person p2 = new Person();
+        Person p1 = new Person("John",12);
         Person p3 = new Person("Harsh", 25, 928282);
         // p1.age = 15;
         // p1.name = "Mahesh";
