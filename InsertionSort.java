@@ -3,6 +3,8 @@ public class InsertionSort{
         for(int i=1;i<num.length;i++){
             int currentPosition = num[i];
             int previousPosition = i-1;
+            /*The While loop checks if the previous elements are larger than the current element 
+            and shifts them one position to the right to make space for the currentPosition.*/
             while(previousPosition>=0 && num[previousPosition]>currentPosition){
                 num[previousPosition+1] = num[previousPosition];
                 previousPosition--;
