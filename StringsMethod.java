@@ -32,25 +32,36 @@ public class StringsMethod{
         // System.out.println(Name.lastIndexOf("eH"));//
         // System.out.println(Name.lastIndexOf("yu", 4));//
 
-        String school = "IJS";
-        System.out.println(school.equals("IJS"));//Case sensitive  -> true
-        System.out.println(school.equals("IjS"));// -> false
-        System.out.println(school.equalsIgnoreCase("IjS"));// it ignores the case Sensitivity -> true
+        // String school = "IJS";
+        // System.out.println(school.equals("IJS"));//Case sensitive  -> true
+        // System.out.println(school.equals("IjS"));// -> false
+        // System.out.println(school.equalsIgnoreCase("IjS"));// it ignores the case Sensitivity -> true
 
 
-        int count =0, ans =0;
-        for(int i=0;i<Name.length();i++){
+        // int count =0, ans =0;
+        // for(int i=0;i<Name.length();i++){
+        //     if(Name.charAt(i)==' '){
+        //         count++;
+        //     }
+        // }
+        // ans=count+1;
+        // if(count == 0){ 
+        // System.out.println("Number of words present in the string - "+count);
+        // }
+        // else{
+        // System.out.println("Number of words present in the string - "+ ans);
+        // }
+
+        String ab = "";
+        int j=Name.length();
+        int i;
+        for(i=Name.length()-1;i>=0;i--){
             if(Name.charAt(i)==' '){
-                count++;
+                ab=ab+Name.substring(i+1,j) + " ";
+                j=i;
             }
         }
-        ans=count+1;
-        if(count == 0){ 
-        System.out.println("Number of words present in the string - "+count);
-        }
-        else{
-        System.out.println("Number of words present in the string - "+ ans);
-        }
-
+        ab=ab+Name.substring(i+1,j);
+        System.out.println(ab);
     }
 }
