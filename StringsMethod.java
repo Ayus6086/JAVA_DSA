@@ -37,5 +37,20 @@ public class StringsMethod{
         System.out.println(school.equals("IjS"));// -> false
         System.out.println(school.equalsIgnoreCase("IjS"));// it ignores the case Sensitivity -> true
 
+
+        int count =0, ans =0;
+        for(int i=0;i<Name.length();i++){
+            if(Name.charAt(i)==' '){
+                count++;
+            }
+        }
+        ans=count+1;
+        if(count == 0){ 
+        System.out.println("Number of words present in the string - "+count);
+        }
+        else{
+        System.out.println("Number of words present in the string - "+ ans);
+        }
+
     }
 }

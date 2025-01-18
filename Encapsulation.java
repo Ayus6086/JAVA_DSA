@@ -1,4 +1,4 @@
-//Encapsution is process of wapping data members and member  function together in a single unit
+//Encapsution is process of wrapping data members and member  function together in a single unit
 class Bank{
     private String accName = "Ayush";
     private int accNo = 123456;//instant variable
