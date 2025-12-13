@@ -1,3 +1,4 @@
+import java.util.*;
 public class LinkedList{
     public static void printLinkedList(Node head){
         while(head!=null){
@@ -27,7 +28,7 @@ public class LinkedList{
                 tail=newNode;
             }
             else{
-                tail.next=newNodel=;
+                tail.next=newNode;
                 tail=newNode;
             }
             data=sc.nextInt();
@@ -83,6 +84,6 @@ class Node{
     Node next;
             Node(int data){
                 this.data=data;
-                next = null;
+                this.next = null;
             }
 }
