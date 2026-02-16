@@ -1,27 +1,27 @@
 import java.util.*;
-public class StackPrefixToInfix{
+public class StackPrefixToPostfix{
     static boolean isOperator(char ch){
         return ch=='+' || ch=='-' || ch=='*' || ch=='/' || ch=='^';
     }
-    static String stackPrefixToInfix(String prefix){
-        int i = prefix.length() - 1;
+    static String stackPrefixToPostfix(String prefix){
+        int n = prefix.length()-1;
         Stack<String> st = new Stack<>();
-        while(i>=0){
-            char c = prefix.charAt(i);
+        while(n>=0){
+            char c = prefix.charAt(n);
             if(!isOperator(c)){
                 st.push(String.valueOf(c));
             }else{
-                String t1 = st.pop();
+                String t1=st.pop();
                 String t2 = st.pop();
-                String expr = '('+t1+c+t2+')';
+                String expr = t1+t2+c;
                 st.push(expr);
             }
-            i--;
+            n--;
         }
         return st.peek();
     }
     public static void main(String[] args) {
-        String s = "*+PQ-MN";
-        System.out.println(stackPrefixToInfix(s));
+        String ss = "/-AB*+DEF";
+        System.out.println(stackPrefixToPostfix(ss));
     }
 }
